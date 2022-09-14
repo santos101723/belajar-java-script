@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viwport" content="width=device-width,initial-scale
+	<title>Contoh Event Mouse</title>
+</head>
+<body>
+	<buton id-"btn-enter">Mouse Enter</button>
+	<buton id="btn-hover">Hover</buton>
+	<buton id="btn-out>Mouse Out</button>
+	
+	
+	<script>
+	   const btnEnter = document.getElementById("btn-enter");
+	   const btnHover = document.getElementById("btn-hover");
+	   const btnOut = document.getElemenById("btn-out");
+	   
+	   btnEnter.addEventListener("mouseenter", function(event) {
+	     event.target.innerText = "Mouse sudah masuk";
+	   });
+	   
+	   btnout.addEventListener("mouseout", function(event) {
+	     event.target.innerText = "Mouse sudah keluar";
+	   });
+	   
+	   btnHover.addEventListener("mouseover", function(event) {
+	     event.target.innerText = "Mouse sudah di atas elemen";
+	   });
+	     
+	</script>
+</body>
+</html>
